@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Tank 2</title> <!-- Added title here -->
+    <title>Bubble Tank 2</title>
     <style>
         body, html {
             margin: 0;
@@ -18,19 +17,19 @@
             overflow: hidden;
         }
 
-        .swf {
+        ruffle-player {
             width: 100%;
             height: 100%;
-            margin: 0;
-            padding: 0;
-            border: none;
         }
     </style>
 </head>
 <body>
+    <!-- Load Ruffle via JS -->
     <script src="https://greys2121.github.io/RUFFFFFLE_EMBED/ruffle/ruffle.js"></script>
+
     <div class="container">
-        <embed class="swf" pluginspage="http://www.macromedia.com/go/getflashplayer" src="https://github.com/ThatWirdGuy/PVZ2/blob/main/PvZ2.swf" type="application/x-shockwave-flash">
+        <!-- Replace <embed> with <ruffle-player> for better compatibility -->
+        <ruffle-player src="PvZ2.swf"></ruffle-player>
     </div>
 </body>
 </html>
